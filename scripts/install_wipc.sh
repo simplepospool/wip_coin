@@ -1,14 +1,14 @@
 #!/bin/bash
 
-COIN='bitgreen'
-TICKER='bitg'
-COIN_DAEMON='bitgreend'
-COIN_CLI='bitgreen-cli'
-CONFIGFOLDER='/root/.bitgreen'
-CONFIG_FILE='bitgreen.conf'
-PORT='9'
-RPCPORT='10'
-IMAGE='registry.gitlab.com/bitgreen/bitg-docker:latest'
+COIN='wipcoin'
+TICKER='wipc'
+COIN_DAEMON='wipcoind'
+COIN_CLI='wipcoin-cli'
+CONFIGFOLDER='/root/.wipcoin'
+CONFIG_FILE='wipcoin.conf'
+PORT='1'
+RPCPORT='2'
+IMAGE='docker pull simplepospool/wipcoin:latest'
 
 
 set -e
