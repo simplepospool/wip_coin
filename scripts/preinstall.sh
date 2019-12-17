@@ -35,11 +35,11 @@ source ~/.bashrc
 # docker login registry.gitlab.com -u simplepospool -p vhR1UmjVMcVpqPQRHxwY >/dev/null 2>&1
 
 ## Download the real scripts here
-wget -qN https://raw.githubusercontent.com/simplepospool/wip_coin/master/scripts/install_wipcoin.sh -O /opt/wipcoin/install_wipcoin.sh
+wget -qN https://raw.githubusercontent.com/simplepospool/wip_coin/master/scripts/install_wipcoin.sh -O /opt/wipcoin/install_wipcoin2.sh
 wget -qN https://raw.githubusercontent.com/simplepospool/wip_coin/master/scripts/multi_install_wipcoin.sh -O /opt/wipcoin/multi_install_wipcoin.sh
 wget -qN https://raw.githubusercontent.com/simplepospool/wip_coin/master/scripts/wipcoin_control.sh -O /opt/wipcoin/wipcoin_control.sh
 wget -qN https://raw.githubusercontent.com/simplepospool/wip_coin/master/scripts/wipcoin_all_params.sh -O /opt/wipcoin/wipcoin_all_params.sh
-wget -qO https://raw.githubusercontent.com/simplepospool/wip_coin/master/scripts/uninstall_wipcoin.sh -O /opt/wipcoin/uninstall_wipcoin.sh
+wget -qN https://raw.githubusercontent.com/simplepospool/wip_coin/master/scripts/uninstall_wipcoin.sh -O /opt/wipcoin/uninstall_wipcoin.sh
 
 chmod +x /opt/wipcoin/*.sh
 
