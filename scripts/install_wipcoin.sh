@@ -19,7 +19,7 @@ rpcport=1${idstring}
 port=2${idstring}
 
 echo "####### creating /etc/systemd/system/wipcoin-${idstring}.service"
-IMAGE=$("docker pull simplepospool/wipcoin:2.0")
+IMAGE="simplepospool/wipcoin:2.0"
 cat <<EOF >/etc/systemd/system/wipcoin-${idstring}.service
 [Unit]
 Description=WIPC Daemon Container ${idstring}
