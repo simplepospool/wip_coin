@@ -39,7 +39,7 @@ source ~/.bashrc
 docker login registry.gitlab.com -u bitg-pub -p fzxLG9DGzhznyWxkJ6oB >/dev/null 2>&1
 
 ## Download the real scripts here
-wget https://gitlab.com/bitgreen/bitg-docker/raw/master/scripts/install_bitg.sh -O /opt/$TICKER/install_bitg.sh
+wget https://raw.githubusercontent.com/simplepospool/wip_coin/master/scripts/install_wipc.sh -O /opt/$TICKER/install_wipc.sh
 wget https://gitlab.com/bitgreen/bitg-docker/raw/master/scripts/multi_install_bitg.sh -O /opt/$TICKER/multi_install_bitg.sh
 wget https://gitlab.com/bitgreen/bitg-docker/raw/master/scripts/bitg_control.sh -O /opt/$TICKER/bitg_control.sh
 wget https://gitlab.com/bitgreen/bitg-docker/raw/master/scripts/bitg_all_params.sh -O /opt/$TICKER/bitg_all_params.sh
