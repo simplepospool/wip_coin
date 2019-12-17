@@ -19,7 +19,7 @@ rpcport=1${idstring}
 port=2${idstring}
 
 echo "####### creating /etc/systemd/system/wipcoin-${idstring}.service"
-IMAGE="simplepospool/wipcoin:2.0"
+# IMAGE="simplepospool/wipcoin:2.0"
 cat <<EOF >/etc/systemd/system/wipcoin-${idstring}.service
 [Unit]
 Description=WIPC Daemon Container ${idstring}
@@ -32,7 +32,7 @@ Restart=always
 ExecStartPre=-/usr/bin/docker stop wipcoin-${idstring}
 ExecStartPre=-/usr/bin/docker rm  wipcoin-${idstring}
 # Always pull the latest docker image
-ExecStartPre=/usr/bin/docker pull ${IMAGE}
+ExecStartPre=/usr/bin/docker pull simplepospool/wipcoin:2.0
 ExecStop=/usr/bin/docker exec wipcoin-${idstring} /opt/app/wipcoin-cli stop
 ExecStart=/usr/bin/docker run --rm -p ${port}:${port} -p ${rpcport}:${rpcport} -v /mnt/wipcoin/${idstring}:/root/.wipcoin --name wipcoin-${idstring} ${IMAGE}
 [Install]
