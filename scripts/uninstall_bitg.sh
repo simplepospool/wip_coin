@@ -1,4 +1,9 @@
 #!/bin/bash
+
+COIN='bitgreen'
+TICKER='bitg'
+
+
 set -e
 
 if [ $# -lt 1 ]; then
@@ -8,7 +13,7 @@ fi
 
 id=$(printf '%03d' "${1}")
 
-systemctl disable "bitg-${id}"
-systemctl stop "bitg-${id}"
-rm -r "/mnt/bitg/${id}"
-rm "/etc/systemd/system/bitg-${id}.service"
+systemctl disable "$TICKER-${id}"
+systemctl stop "$TICKER-${id}"
+rm -r "/mnt/$TICKER/${id}"
+rm "/etc/systemd/system/$TICKER-${id}.service"

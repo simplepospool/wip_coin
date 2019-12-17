@@ -8,7 +8,7 @@ CONFIGFOLDER='/root/.wipcoin'
 CONFIG_FILE='wipcoin.conf'
 PORT='1'
 RPCPORT='2'
-IMAGE='docker pull simplepospool/wipcoin:latest'
+IMAGE='simplepospool/wipcoin:latest'
 
 
 set -e
